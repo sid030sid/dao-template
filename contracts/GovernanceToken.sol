@@ -4,7 +4,7 @@ pragma solidity ^0.8.9;
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 contract GovernanceToken is ERC20Votes {
-  uint256 public s_maxSupply = 1000000000000000000000000;
+  uint256 public s_maxSupply = 1000000000000000000000000; //TODO get rid of it
 
   constructor() ERC20("GovernanceToken", "GT") ERC20Permit("GovernanceToken") {
     _mint(msg.sender, s_maxSupply);
@@ -20,6 +20,7 @@ contract GovernanceToken is ERC20Votes {
     super._afterTokenTransfer(from, to, amount);
   }
 
+  //TODO consider that this is only called by investores in poc
   function _mint(address to, uint256 amount) internal override(ERC20Votes) {
     super._mint(to, amount);
   }

@@ -1,0 +1,9 @@
+test dao example code: what are its limits and what is redundant
+    check out yt video of this example code: https://www.youtube.com/watch?v=AhJtmUqhAqg
+    check out how proposals work and how can a (labour and investment) proposal trigger a minting 
+    check out quorum: what does it mean in praxis
+    write more texts
+    check out if delegation of vote is in the ercVote standard already included
+    how to is mint price --> minting price is always zero
+implement tracking of hours: 1. enter labour hours in proposal, 2. proposal is pending while DAO members vote on it, 3. rejection or acceptance, 4. if acceptance, mint new governancetokens
+converting labour hours to governanceToken
