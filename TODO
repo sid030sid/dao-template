@@ -3,7 +3,7 @@ test dao example code: what are its limits and what is redundant
     check out how proposals work and how can a (labour and investment) proposal trigger a minting 
     check out quorum: what does it mean in praxis
     write more texts
-    check out if delegation of vote is in the ercVote standard already included
-    how to is mint price --> minting price is always zero
-implement tracking of hours: 1. enter labour hours in proposal, 2. proposal is pending while DAO members vote on it, 3. rejection or acceptance, 4. if acceptance, mint new governancetokens
-converting labour hours to governanceToken
+    check out if delegation of vote is in the ercVote standard already included --> yes it has a delegate vote function
+    how to set mint price --> minting price is always zero and labour hours are converted into governance tokens based on predefined rate for each dao member, they can be changed through proposal
+implement tracking of hours: 1. enter labour hours in proposal, 2. proposal is pending while DAO members vote on it, 3. rejection or acceptance, 4. if acceptance, mint new governance tokens
+converting labour hours to governanceToken based on rate of respective dao member/worker

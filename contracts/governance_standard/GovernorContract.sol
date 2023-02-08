@@ -81,6 +81,12 @@ contract GovernorContract is
     return super.state(proposalId);
   }
 
+  /**
+  targets = single value array of the smart contract 
+  values = always [0] ??? why ?
+  calldatas = encoded function call: name of function and input parameters are encoded (see test)
+  description = data to describe the proposal
+   */
   function propose(
     address[] memory targets,
     uint256[] memory values,
@@ -99,6 +105,12 @@ contract GovernorContract is
     return super.proposalThreshold();
   }
 
+  /**
+  targets = single value array of the smart contract 
+  values = always [0] ??? why ?
+  calldatas = encoded function call: name of function and input parameters are encoded (see test)
+  descriptionHash = data to describe the proposal
+   */
   function _execute(
     uint256 proposalId,
     address[] memory targets,
